@@ -1,0 +1,56 @@
+.header__nav {
+    z-index: 1;
+}
+
+.nav-list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    padding: 13px 0 13px 0;
+}
+
+.nav-item-logo {
+    padding-right: 42px;
+    margin-right: 41px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.nav-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    transition: 0.5s ease-in;
+}
+
+.menu-item-text {
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.nav-participate {
+    margin-left: auto;
+}
+
+.nav-participate-list {
+    display: flex;
+    flex-direction: row;align-items: center;
+    gap: 20px;
+}
+
+.nav-participate-become-member {
+    width: 214px;
+}

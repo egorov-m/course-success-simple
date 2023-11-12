@@ -1,0 +1,114 @@
+body {
+    background-color: var(--dark-background-color);
+    color: var(--text-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 100%;
+    letter-spacing: 0.2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+.section {
+    display: flex;
+    margin: 160px 0 160px 0;
+}
+
+.section_center {
+    justify-items: center;
+}
+
+.subtitle {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+
+.hgroup_center {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    text-align: center;
+    gap: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.flex-item {
+    background: white;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    padding: 35px 0 35px 0;
+    min-width: 329px;
+}
+
+.package {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accent-icon-image {
+    background: var(--accent-color);
+    border-radius: 10px;
+    display: flex;
+    padding: 22px 19px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.package__title {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    width: 157px;
+}
+
+.package__text-separator {
+    background: var(--accent-color);
+    height: 2px;
+    width: 50px;
+}
+
+.package__description {
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    width: 136px;
+}
