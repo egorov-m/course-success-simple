@@ -12,7 +12,10 @@
 
     <link rel="stylesheet" type="text/css" href="assets/styles/components/nav.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/components/header.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/components/buttons.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/components/packages.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/components/courses.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/components/course-carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/components/common/buttons.css">
     <title>Document</title>
 </head>
 <body>
@@ -84,11 +87,11 @@
                     <span class="subtitle">Welcome</span>
                 </div>
                 <h1 class="header__content-title">Courses of excellent quality</h1>
-                <p class="header__content-description">We know how large objects will act,<br> but things on a small scale</p>
+                <h3 class="header__content-description">We know how large objects will act,<br> but things on a small scale</h3>
                 <div class="header__content-join">
-                    <div class="button">
+                    <div class="button" role="button">
                         <a href="">
-                            <span class="button-text" role="button">Join Us</span>
+                            <span class="button-text">Join Us</span>
                         </a>
                     </div>
                 </div>
@@ -103,8 +106,8 @@
                 <h3>Problems trying to resolve the conflict between<br>
                     the two major realms of Classical physics: Newtonian mechanics</h3>
             </hgroup>
-            <div class="flex">
-                <div class="flex-item">
+            <div class="packages">
+                <div class="package-item">
                     <div class="package">
                         <div class="package__image accent-icon-image">
                             <img src="./assets/icons/heart.svg" alt="Package icon" class="icon">
@@ -114,7 +117,7 @@
                         <p class="package__description">The gradual accumulation and small-scale.</p>
                     </div>
                 </div>
-                <div class="flex-item">
+                <div class="package-item">
                     <div class="package">
                         <div class="package__image accent-icon-image">
                             <img src="./assets/icons/flag.svg" alt="Package icon" class="icon">
@@ -122,6 +125,168 @@
                         <span class="package__title">training Courses</span>
                         <span class="package__text-separator"></span>
                         <p class="package__description">The gradual accumulation and small-scale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="courses">
+                <div class="courses__info">
+                    <span class="courses__info-separator"></span>
+                    <hgroup class="courses__info-hgroup">
+                        <h2>Watch our Courses</h2>
+                        <h3>Problems trying to resolve the conflict between<br>
+                            the two major realms of Classical physics:<br>
+                            Newtonian mechanics</h3>
+                    </hgroup>
+                    <div class="courses__info-button button button_text">
+                        <a href="">
+                            <span class="button-text button_arrow-next">Learn More</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="courses__images"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <hgroup class="hgroup_center">
+                <p class="subtitle">Practice Advice</p>
+                <h2>Make online education accessible</h2>
+                <h3>Problems trying to resolve the conflict between<br>
+                    the two major realms of Classical physics: Newtonian mechanics</h3>
+            </hgroup>
+            <div class="course-carousel">
+                <div class="course-item">
+                    <div class="course-item__header">
+                        <img src="./assets/images/product_cover_1.jpg" alt="" class="course-item__image">
+                        <div class="course-item__sale">Sale</div>
+                        <div class="course-item__actions">
+                            <div class="icon-button" role="button">
+                                <a href="">
+                                    <img src="./assets/icons/heart_outline.svg" alt="Like" class="icon-button__icon">
+                                </a>
+                            </div>
+                            <div class="icon-button">
+                                <a href="">
+                                    <img src="./assets/icons/shopping_cart_outline.svg" alt="Shopping cart" class="icon-button__icon">
+                                </a>
+                            </div>
+                            <div class="icon-button">
+                                <a href="">
+                                    <img src="./assets/icons/eye.svg" alt="View" class="icon-button__icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-item__content">
+                        <div class="course-item__content-header">
+                            <span class="course-item__content-name">English Department</span>
+                            <div class="rating">4.9
+                            </div>
+                        </div>
+                        <span class="course-item__subheader">Graphic Design</span>
+                        <p class="course-item__description">
+                            We focus on ergonomics and meeting
+                            you where you work. It's only a
+                            keystroke away.
+                        </p>
+                        <div class="course-item__content-sales">
+                            <img src="./assets/icons/arrow_down.svg" alt="Sales">
+                            <span class="course-item__value">15 Sales</span>
+                        </div>
+                        <div class="course-item__prices">
+                            <span class="course-item__price course-item__price_muted">$16.48</span>
+                            <span class="course-item__price">$6.48</span>
+                        </div>
+                        <div class="course-item__info">
+                            <div class="course-item__info-item">
+                                <img src="assets/icons/clock.svg" alt="Clock">
+                                <span class="course-item__info-title">22hr 30min</span>
+                            </div>
+                            <div class="course-item__info-item">
+                                <img src="./assets/icons/wave.svg" alt="Lessons">
+                                <span class="course-item__info-title">64 Lessons</span>
+                            </div>
+                            <div class="course-item__info-item">
+                                <img src="./assets/icons/stat.svg" alt="Lessons">
+                                <span class="course-item__info-title">Progress</span>
+                            </div>
+                        </div>
+
+                        <div class="course-item__outline-button button button_outline button_text">
+                            <a href="">
+                                <span class="button-text">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="course-item__header">
+                        <img src="./assets/images/product_cover_2.jpg" alt="" class="course-item__image">
+                        <div class="course-item__sale">Sale</div>
+                        <div class="course-item__actions">
+                            <div class="icon-button">
+                                <a href="">
+                                    <img src="./assets/icons/heart_outline.svg" alt="Like" class="icon-button__icon">
+                                </a>
+                            </div>
+                            <div class="icon-button">
+                                <a href="">
+                                    <img src="./assets/icons/shopping_cart_outline.svg" alt="Shopping cart" class="icon-button__icon">
+                                </a>
+                            </div>
+                            <div class="icon-button">
+                                <a href="">
+                                    <img src="./assets/icons/eye.svg" alt="View" class="icon-button__icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-item__content">
+                        <div class="course-item__content-header">
+                            <span class="course-item__content-name">English Department</span>
+                            <div class="rating">4.9
+                            </div>
+                        </div>
+                        <span class="course-item__subheader" >
+                        Graphic Design
+                    </span>
+                        <p class="course-item__description">
+                            We focus on ergonomics and meeting
+                            you where you work. It's only a
+                            keystroke away.
+                        </p>
+                        <div class="course-item__content-sales">
+                            <img src="./assets/icons/arrow_down.svg" alt="Sales">
+                            <span class="course-item__value">15 Sales</span>
+                        </div>
+                        <div class="course-item__prices">
+                            <span class="course-item__price course-item__price_muted">$16.48</span>
+                            <span class="course-item__price">$6.48</span>
+                        </div>
+                        <div class="course-item__info">
+                            <div class="course-item__info-item">
+                                <img src="assets/icons/clock.svg" alt="Clock">
+                                <span class="course-item__info-title">22hr 30min</span>
+                            </div>
+                            <div class="course-item__info-item">
+                                <img src="./assets/icons/wave.svg" alt="Lessons">
+                                <span class="course-item__info-title">64 Lessons</span>
+                            </div>
+                            <div class="course-item__info-item">
+                                <img src="./assets/icons/stat.svg" alt="Lessons">
+                                <span class="course-item__info-title">Progress</span>
+                            </div>
+                        </div>
+                        <div class="course-item__outline-button button button_outline button_text">
+                            <a href="">
+                                <span class="button-text">Learn More</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
