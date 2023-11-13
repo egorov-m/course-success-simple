@@ -59,13 +59,13 @@
 }
 
 .review-star {
-    background: url("../../../assets/icons/bxs-star.svg");
+    background: url("../../icons/bxs-star.svg");
     height: 22px;
     width: 22px;
 }
 
 .review-star_outline {
-    background: url("../../../assets/icons/bx-star.svg");
+    background: url("../../icons/bx-star.svg");
 }
 
 .review__author-name {
