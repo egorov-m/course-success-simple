@@ -55,3 +55,24 @@
     width: 115px;
     z-index: 1;
 }
+
+@media (max-width: 1080px) {
+    .courses__images {
+        height: 308px;
+        width: 308px;
+    }
+    .courses__images:after {
+        margin: 50px 0 0 270px;
+    }
+    .courses__images:before {
+        height: 180px;
+        margin: 240px 0 0 76px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 790px) {
+    .courses {
+        flex-direction: column-reverse;
+    }
+}

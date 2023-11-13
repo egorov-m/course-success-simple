@@ -1,0 +1,87 @@
+.reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.review-item {
+    background: white;
+    box-sizing: border-box;
+    padding: 25px 25px 0 25px;
+    width: 501px;
+}
+
+.review {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    width: 100%;
+}
+
+.review-author-image {
+    align-items: center;
+    background: lightgray 50%;
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    height: 128px;
+    justify-content: center;
+    width: 128px;
+}
+
+.review__text {
+    color: var(--secondary-text-color);
+    height: 120px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    width: 159px;
+    margin-bottom: 15px;
+}
+
+.review__stars {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+.review-star {
+    background: url("../../../assets/icons/bxs-star.svg");
+    height: 22px;
+    width: 22px;
+}
+
+.review-star_outline {
+    background: url("../../../assets/icons/bx-star.svg");
+}
+
+.review__author-name {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-bottom: 5px;
+}
+
+.review__author-profession {
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
