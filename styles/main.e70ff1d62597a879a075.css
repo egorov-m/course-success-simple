@@ -1,0 +1,938 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(https://egorov-m.github.io/course-success-simple/assets/fonts/Montserrat-Regular.24785cc015b27a3e964b.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(https://egorov-m.github.io/course-success-simple/assets/fonts/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #23a6f0;
+    --accent-color: #e74040;
+    --alert-color: #e77c40;
+    --star-color: #ffce31;
+    --secondary-star-color: #f3cd03;
+
+    --primary-opacity-10: #23A6F01A;
+    --white-opacity-10: #ffffff1a;
+
+    --input-border-color: #e6e6e6;
+    --input-bg-color: #f9f9f9;
+
+    --text-color: #fff;
+    --primary-text-color: #252b42;
+    --secondary-text-color: #737373;
+    --muted-text-color: #bdbdbd;
+    --success-text-color: #40bb15;
+
+    --black-background-color: #000;
+    --black-opacity-13-background-color: #00000021;
+    --black-opacity-14-background-color: #00000024;
+    --black-opacity-99-56-background-color: rgba(0, 0, 0, 0.9956);
+
+    --dark-background-color: #252b42;
+    --light-background-color: #fff;
+    --light-gray-background-color: #fafafa;
+    --dark-backing-color: #00087e;
+}
+
+body {
+    background-color: var(--dark-background-color);
+    color: var(--text-color);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 100%;
+    letter-spacing: 0.2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+h3 {
+    line-height: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+.section {
+    padding: 160px 0 160px 0;
+}
+
+.footer {
+    padding: 80px 0 80px 0;
+}
+
+.section_center {
+    justify-items: center;
+}
+
+.subtitle {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.hgroup_center {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    text-align: center;
+    gap: 10px;
+}
+
+@media (max-width: 1080px) {
+    .container {
+        max-width: 750px;
+        padding: 0 20px 0 20px;
+    }
+    .section {
+        padding: 80px 0 80px 0;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 790px) {
+    .container {
+        max-width: none;
+    }
+    .section {
+        padding: 60px 0 60px 0;
+    }
+}
+
+.header__nav {
+    z-index: 1;
+}
+
+.nav-list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    padding: 13px 0 13px 0;
+}
+
+.nav-item-logo {
+    padding-right: 42px;
+    margin-right: 41px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.nav-menu-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    transition: 0.5s ease-in;
+}
+
+.menu-item-text {
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.nav-participate {
+    margin-left: auto;
+}
+
+.nav-participate-list {
+    display: flex;
+    flex-direction: row;align-items: center;
+    gap: 20px;
+}
+
+.nav-participate-become-member {
+    width: 214px;
+}
+
+.header {
+    background-image: url(https://egorov-m.github.io/course-success-simple/assets/img/images/header_background.0cfc322388075d3105b2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 889px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 889px;
+    background: linear-gradient(-90deg,
+    var(--black-opacity-13-background-color),
+    var(--black-opacity-14-background-color),
+    var(--black-opacity-99-56-background-color));
+}
+
+.header__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 599px;
+    margin: 112px 0 112px 0;
+    gap: 35px
+}
+
+.header__content-join {
+    max-width: 133px;
+}
+
+.header__content-title {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.header__content-description {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 1080px) {
+    .header__content-title {
+        font-size: 48px;
+    }
+    .header__content-description {
+        font-size: 16px;
+    }
+    .nav-participate-become-member {
+        display: none;
+    }
+}
+
+@media (max-width: 790px) {
+    .header__content-title {
+        font-size: 36px;
+        line-height: 45px
+    }
+    .header__content-description {
+        font-size: 12px;
+    }
+    .nav-participate-become-member {
+        display: none;
+    }
+}
+
+.packages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.package-item {
+    background: white;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    padding: 35px 0 35px 0;
+    min-width: 330px;
+}
+
+.package {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accent-icon-image {
+    background: var(--accent-color);
+    border-radius: 10px;
+    display: flex;
+    padding: 22px 19px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.package__title {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    width: 157px;
+}
+
+.package__text-separator {
+    background: var(--accent-color);
+    height: 2px;
+    width: 50px;
+}
+
+.package__description {
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    width: 136px;
+}
+
+.courses {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.courses__info-hgroup > * {
+    margin-bottom: 35px;
+}
+
+.courses__info-separator {
+    background: var(--accent-color);
+    height: 7px;
+    margin-bottom: 35px;
+    width: 94px;
+}
+
+.courses__images {
+    background-image: url(https://egorov-m.github.io/course-success-simple/assets/img/images/watch_our_courses_img.4f00e0b2fe961c8143b7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 83px;
+    box-shadow: 31px 22px var(--dark-backing-color);
+    height: 408px;
+    margin: 0 99px 163px 0;
+    width: 408px;
+}
+
+.courses__images:before {
+    background-image: url(https://egorov-m.github.io/course-success-simple/assets/img/images/watch_our_courses_img_stat_2.c3d3433781d22ce1ed20.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 247px;
+    margin: 323px 0 0 76px;
+    position: absolute;
+    width: 247px;
+    z-index: 1;
+}
+
+.courses__images:after {
+    background-image: url(https://egorov-m.github.io/course-success-simple/assets/img/images/watch_our_courses_img_stat_1.a6b28d97935c3d62da5f.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 58px;
+    margin: 80px 0 0 392px;
+    position: absolute;
+    width: 115px;
+    z-index: 1;
+}
+
+@media (max-width: 1080px) {
+    .courses__images {
+        height: 308px;
+        width: 308px;
+    }
+    .courses__images:after {
+        margin: 50px 0 0 270px;
+    }
+    .courses__images:before {
+        height: 180px;
+        margin: 240px 0 0 76px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 790px) {
+    .courses {
+        flex-direction: column-reverse;
+    }
+}
+
+.course-carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.course-item {
+    width: 330px;
+}
+
+.course-item__header {
+    position: relative;
+    height: 300px;
+}
+
+.course-item__image {
+    width: 330px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.course-item__sale {
+    background-color: var(--accent-color);
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+    color: var(--text-color);
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    padding: 0 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.course-item__actions {
+    display: flex;
+    bottom: 24px;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.course-item__content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 25px 25px 30px;
+}
+
+
+.course-item__content-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course-item__content-name {
+    color: var(--primary-color);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    margin-right: 5px;
+}
+
+.rating {
+    align-items: center;
+    background-color: var(--dark-background-color);
+    border-radius: 20px;
+    display: flex;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    padding: 5px;
+}
+
+.rating::before {
+    background-image: url(https://egorov-m.github.io/course-success-simple/assets/img/icons/star.20f04843d1594330b7ad.svg);
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.course-item__subheader {
+    color: var(--dark-background-color);
+    font-weight: 700;
+}
+
+.course-item__description {
+    color: var(--secondary-text-color);
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.course-item__value {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.course-item__prices {
+    display: flex;
+    gap: 5px;
+    padding: 5px 3px;
+}
+
+.course-item__price {
+    color: var(--success-text-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.course-item__price_muted {
+    color: var(--muted-text-color);
+}
+
+.course-item__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.course-item__info-item {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.course-item__info-title {
+    color: #737373;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+}
+
+.course-item__outline-button {
+    align-self: flex-start;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.review-item {
+    background: white;
+    box-sizing: border-box;
+    padding: 25px 25px 0 25px;
+    width: 501px;
+}
+
+.review {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    width: 100%;
+}
+
+.review-author-image {
+    align-items: center;
+    background: lightgray 50%;
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    height: 128px;
+    justify-content: center;
+    width: 128px;
+}
+
+.review__text {
+    color: var(--secondary-text-color);
+    height: 120px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    width: 159px;
+    margin-bottom: 15px;
+}
+
+.review__stars {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+.review-star {
+    background: url(https://egorov-m.github.io/course-success-simple/assets/img/icons/bxs-star.c10e7d5131f8a49d9fc5.svg);
+    height: 22px;
+    width: 22px;
+}
+
+.review-star_outline {
+    background: url(https://egorov-m.github.io/course-success-simple/assets/img/icons/bx-star.afc1d5b79707b50785b1.svg);
+}
+
+.review__author-name {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-bottom: 5px;
+}
+
+.review__author-profession {
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.email-form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.input-wrapper {
+    background: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    display: flex;
+}
+
+.email-input {
+    align-items: center;
+    border: none;
+    display: flex;
+    width: 529px;
+    outline: none;
+    padding: 15px 20px;
+}
+
+.email-input::-moz-placeholder {
+    color: var(--secondary-text-color);
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.email-input::placeholder {
+    color: var(--secondary-text-color);
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.email-input-button {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    width: 117px;
+    height: 58px;
+    padding: 15px 23px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.email-input__label {
+    color: var(--secondary-text-color);
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 1080px) {
+
+    .email-input {
+        width: 429px;
+    }
+}
+
+@media (max-width: 790px) {
+    .email-input {
+        width: 329px;
+    }
+}
+
+@media (max-width: 550px) {
+    .email-input {
+        width: 200px;
+    }
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.footer-item__title {
+    margin-bottom: 20px;
+}
+
+.footer-item__touch-title {
+    margin-bottom: 25px;
+}
+
+.footer-item__description {
+    margin-bottom: 25px;
+}
+
+.footer-description {
+    color: var(--text-color);
+    display: inline-block;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media {
+    height: 24px;
+    width: 24px;
+}
+
+.footer-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 52px;
+    justify-content: center;
+}
+
+.button > a {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.button_transparent-bg {
+    background: transparent;
+}
+
+.button_transparent-bg:hover {
+    background: var(--white-opacity-10);
+}
+
+.button_outline:hover {
+    background: var(--primary-opacity-10);
+}
+
+.button_arrow-forward::after {
+    background-image: url(https://egorov-m.github.io/course-success-simple/assets/img/icons/arrow-right-xs.0dba54718ef1cf9433c5.svg);
+    content: "";
+    display: inline-block;
+    height: 10px;
+    margin-left: 15px;
+    width: 12px;
+}
+
+.courses__info-button {
+    max-width: 104px;
+}
+
+.courses__info-button > a {
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.button_text {
+    align-items: flex-start;
+    background: transparent;
+    height: 16px;
+}
+
+.button_text > a {
+    color: var(--primary-color);
+}
+
+.button_text .button-text:after{
+    background-image: url(https://egorov-m.github.io/course-success-simple/assets/img/icons/arrow-next-xs.d5f3d3cc629618ec45fe.svg);
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-left: 10px;
+    vertical-align: text-top;
+    width: 9px;
+}
+
+.button_outline {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 37px;
+    height: 44px;
+    min-width: 104px;
+}
+
+.button-text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+
+.icon-button {
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    transition: background-color 100ms ease-in;
+    width: 40px;
+}
+
+.icon-button > a {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon-button:hover {
+    background-color: var(--primary-color);
+}
+
+
+/*# sourceMappingURL=main.e70ff1d62597a879a075.css.map*/
