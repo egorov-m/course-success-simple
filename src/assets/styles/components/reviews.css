@@ -85,3 +85,9 @@
     line-height: 24px;
     letter-spacing: 0.2px;
 }
+
+@media screen and (max-width: 550px) {
+    .review-item {
+        width: 100%;
+    }
+}

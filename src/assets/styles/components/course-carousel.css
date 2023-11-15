@@ -75,8 +75,10 @@
     align-items: center;
     background-color: var(--dark-background-color);
     border-radius: 20px;
+    box-sizing: border-box;
     display: flex;
     font-size: 12px;
+    height: 26px;
     line-height: 16px;
     letter-spacing: 0.2px;
     color: var(--text-color);
@@ -131,6 +133,7 @@
 
 .course-item__info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px 0;
 }
@@ -150,4 +153,14 @@
 
 .course-item__outline-button {
     align-self: flex-start;
+}
+
+@media screen and (max-width: 370px) {
+    .course-item,
+    .course-item__image {
+        width: 100%;
+    }
+    .course-item__info {
+        flex-direction: column;
+    }
 }

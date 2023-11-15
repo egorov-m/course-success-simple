@@ -46,27 +46,30 @@
     letter-spacing: 0.2px;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
+    .header,
+    .header::before {
+        height: 100vh;
+    }
     .header__content-title {
         font-size: 48px;
     }
     .header__content-description {
         font-size: 16px;
+        line-height: 18px;
     }
     .nav-participate-become-member {
         display: none;
     }
 }
 
-@media (max-width: 790px) {
+@media screen and (max-width: 790px) {
     .header__content-title {
         font-size: 36px;
         line-height: 45px
     }
     .header__content-description {
         font-size: 12px;
-    }
-    .nav-participate-become-member {
-        display: none;
+        line-height: 15px;
     }
 }

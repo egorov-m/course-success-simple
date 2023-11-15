@@ -13,6 +13,7 @@ a {
     text-decoration: none;
 }
 
+a:link,
 a:visited {
     color: var(--text-color);
 }
@@ -39,7 +40,7 @@ h2 {
     padding: 160px 0 160px 0;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .container {
         max-width: 750px;
         padding: 0 20px 0 20px;
@@ -50,17 +51,17 @@ h2 {
     h2 {
         font-size: 32px;
     }
-    h3 {
-        font-size: 12px;
-    }
 }
 
-@media (max-width: 790px) {
+@media screen and (max-width: 790px) {
     .container {
         max-width: none;
     }
     .section {
-        padding: 60px 0 60px 0;
+        padding: 40px 0 40px 0;
+    }
+    h2 {
+        font-size: 25px;
     }
 }
 

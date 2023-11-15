@@ -52,3 +52,18 @@
     flex-direction: column;
     gap: 10px;
 }
+
+@media (max-width: 1080px) {
+    .footer-list {
+        justify-content: space-around;
+    }
+    .footer-item {
+        width: 33%;
+    }
+}
+
+@media (max-width: 579px) {
+    .footer-item {
+        width: 50%;
+    }
+}
